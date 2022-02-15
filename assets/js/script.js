@@ -94,3 +94,20 @@ function mapaNormal() {
   mapa.style.width = '100vh'
   mapa.style.height = '60vh'
 }
+
+/* ScrollReveal: Mostrar elementos quando der scroll na página */
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 800,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `
+#trabalhos,
+#clientes,
+#testimonials
+`,
+  { interval: 100 }
+)
